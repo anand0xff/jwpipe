@@ -28,3 +28,14 @@ Install the jwst pipeline:
 	Add these to ~/.bash_profile to access cal reference database info:
 	export CRDS_PATH=$HOME/crds_cache
 	export CRDS_SERVER_URL=https://jwst-crds.stsci.edu
+	
+Install ImPlaneIA:
+
+	bash$ cd ~/.gitsrc
+	bash$ git clone git@github.com:anand0xff/ImPlaneIA.git
+	bash$ cd ImPlaneIA
+	bash$ git checkout centering_RC   # as of 2023_07_12
+	bash$ pip install -e .
+	
+
+	
