@@ -18,7 +18,13 @@ quit Terminal, restart Terminal (Mac OSX) to reset paths, etc.
 	>>> ^D
 	(base) bash$
 
+Install the jwst pipeline:
+
 	conda create -n jwpy311 python
 	# add to ~/.bashprofile:   alias  jwpy="conda deactivate; conda activate jwpy311"
 	# Now activate jwpy311 (eg using the alias jwpy)
 	(jwpy311) bash$  pip install jwst
+	
+	Add these to ~/.bash_profile to access cal reference database info:
+	export CRDS_PATH=$HOME/crds_cache
+	export CRDS_SERVER_URL=https://jwst-crds.stsci.edu
